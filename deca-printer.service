@@ -1,0 +1,13 @@
+[Unit]
+Description=Lector QR e Impresion Automatica DeCA
+After=network.target cups.service
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 -u /usr/local/bin/deca_printer.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
