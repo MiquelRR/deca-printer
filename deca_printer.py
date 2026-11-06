@@ -14,7 +14,7 @@ URL_PATTERN = re.compile(r'https?://[^\s]+')
 # Mapa de caracteres para escáneres en modo emulación teclado
 # Cubre minúsculas, mayúsculas y caracteres típicos en URLs
 CHAR_MAP = {
-    'KEY_0': ('0', '0'), 'KEY_1': ('1', '1'), 'KEY_2': ('2', '2'),
+    'KEY_0': ('0', '='), 'KEY_1': ('1', '1'), 'KEY_2': ('2', '2'),
     'KEY_3': ('3', '3'), 'KEY_4': ('4', '4'), 'KEY_5': ('5', '5'),
     'KEY_6': ('6', '6'), 'KEY_7': ('7', '/'), 'KEY_8': ('8', '('),
     'KEY_9': ('9', ')'),
@@ -27,9 +27,9 @@ CHAR_MAP = {
     'KEY_S': ('s', 'S'), 'KEY_T': ('t', 'T'), 'KEY_U': ('u', 'U'),
     'KEY_V': ('v', 'V'), 'KEY_W': ('w', 'W'), 'KEY_X': ('x', 'X'),
     'KEY_Y': ('y', 'Y'), 'KEY_Z': ('z', 'Z'),
-    # Teclas de puntuación (según disposición de teclado habitual)
-    'KEY_MINUS': ('-', '_'),
-    'KEY_SLASH': ('/', '?'),
+    # Teclas de puntuación (según disposición de teclado en español / ISO)
+    'KEY_MINUS': ("'", '?'),
+    'KEY_SLASH': ('-', '_'),
     'KEY_DOT': ('.', ':'),
     'KEY_SEMICOLON': (';', ':'),
     'KEY_EQUAL': ('=', '+'),
